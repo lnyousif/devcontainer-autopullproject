@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  app:
+    image: mcr.microsoft.com/devcontainers/dotnet:8.0
+    volumes:
+      - ..:/workspace:cached
+      - blogifier-data:/home/vscode
+    command: sleep infinity
+    user: vscode
+
+volumes:
+  blogifier-data:

@@ -1,0 +1,17 @@
+{
+    "name": "Blogifier Dev Container",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "app",
+    "workspaceFolder": "/home/vscode/workspace/Blogifier",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-dotnettools.csdevkit",
+                "ms-dotnettools.csharp",
+                "ms-vscode.vscode-typescript-next"
+            ]
+        }
+    },
+    "postCreateCommand": "bash .devcontainer/init-script.sh",
+    "remoteUser": "vscode"
+}
