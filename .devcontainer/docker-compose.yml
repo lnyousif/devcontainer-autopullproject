@@ -4,7 +4,9 @@ services:
   app:
     image: mcr.microsoft.com/devcontainers/dotnet:8.0
     volumes:
-      - ..:/workspace:cached
+      - type: bind
+        source: ../
+        target: /home/vscode/workspace
       - blogifier-data:/home/vscode
     command: sleep infinity
     user: vscode

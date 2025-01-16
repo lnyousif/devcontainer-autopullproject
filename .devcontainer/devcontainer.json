@@ -2,7 +2,7 @@
     "name": "Blogifier Dev Container",
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
-    "workspaceFolder": "/home/vscode/workspace/Blogifier",
+    "workspaceFolder": "/home/vscode/workspace",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -12,6 +12,6 @@
             ]
         }
     },
-    "postCreateCommand": "bash .devcontainer/init-script.sh",
+    "postCreateCommand": "bash /home/vscode/workspace/.devcontainer/init-script.sh",
     "remoteUser": "vscode"
 }
